@@ -1,28 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Store</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>YAM'S & CO</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#Our Services">Our Services</a></li>
-                <li><a href="#Login">Login</a></li>
-                <li><a href="#Login">cart</a></li>
-            </ul>
-        </nav>
-    </header>
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer Store</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header> <h1>YAM'S & CO</h1></header>
+
+
+    <header>
+      <nav id="top-menu"></nav>
+      <nav id="sub-menu"></nav>
+    </header>
     <section id="home">
-        <h2>Welcome to our Computer Store!</h2>
+        <h2>Welcome to YAM'S & CO!</h2>
         <img src="https://www.shutterstock.com/shutterstock/photos/1932042689/display_1500/stock-photo-businessman-using-mobile-smart-phone-business-global-internet-connection-application-technology-1932042689.jpg" alt="">
         <p class="AboutUs">Established in 2007, Yam's and Co. is a trusted family-owned computer company located in Burkina Faso. With over a decade of experience in the industry, we have proudly served our community by providing top-quality computers, accessories, and expert maintenance and repair services.
 
@@ -36,7 +30,6 @@
             
             Thank you for choosing Yam's and Co. for all your computer needs. We look forward to serving you for many years to com.</p>
     </section>
-
     <section id="products">
         <h2>Our Products</h2>
         <div class="product">
@@ -127,7 +120,7 @@
                 Yes
                 Service & Support
                 Limited warranty - 1 year ¦ Limited warranty - technical support - software - 90 days</p>
-            <button id ="add to cart">Add to Cart</button>
+            <button id ="addToCart1">Add to Cart</button>
         </div>
         <div class="product">
             <img src="https://i.ebayimg.com/images/g/tLEAAOSwzOJjKIz4/s-l500.webp" alt="Computer 2">
@@ -157,7 +150,7 @@
                 Solid State Drive
                 Wireless Communications
                 Bluetooth</p>
-            <button>Add to Cart</button>
+            <button class = "addToCart">Add to Cart</button>
         </div>
         <div class="product">
             <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9315/media-gallery/notebook-xps-9315-nt-blue-gallery-5.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=675&qlt=100,1&resMode=sharp2&size=675,402&chrss=full" alt="Computer 2">
@@ -235,11 +228,23 @@
                 
                 Power
                 45W AC adapter, USB Type-C.</p>
-            <button>Add to Cart</button>
+            <button class = "addToCart">Add to Cart</button>
         </div>
         <!-- Add more products as needed -->
-    </section>
+    </section> 
+ 
+<h2>Contact information</h2>
 
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"  required><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+<button id=" submit" type="submit"> submit</button>
+</form> 
+ 
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Phone: 646 629 0678</p>
@@ -250,6 +255,8 @@
     <footer>
         <p>&copy; Thank You for visiting Yam's & Co. </p>
     </footer>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
+
